@@ -3,3 +3,7 @@
 # Framer X / StencilJS Components
 
 This is a repository of components to test the possibilites for integration between Framer X and StencilJS Web Components.
+
+In order to use Stencil Web Components in a Framer X Project, you'll need to build your components, and have them published on NPM.
+
+You can then use this [Gist](https://gist.github.com/addisonschultz/1811e75b498311211a7f6b8634fb27cd) to load your script tag into Framer X.
