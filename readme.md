@@ -19,7 +19,7 @@ Follow the steps below to use them in your project.
 
 ### **Script Tag in HTML**
 
-1. Put this tag `<script src='https://unpkg.com/framerxcomponents/dist/mycomponent.js'></script>` in the head of your index.html. You can use a different version by specifiying the verion following [this doc](https://unpkg.com/).
+1. Put this tag `<script src='https://unpkg.com/framerxcomponents/dist/framerxcomponents.js'></script>` in the head of your index.html. You can use a different version by specifiying the verion following [this doc](https://unpkg.com/).
 1. Use the custom elements listed above anywhere in your template, JSX, HTML, etc.
 
 ### **Framer X**
@@ -29,7 +29,7 @@ Check out this [starter kit](https://github.com/addisonschultz/yarn-monorepo) to
 Framer X uses React under the hood, but that doesn't mean you can't use you custom Web Components. The easiest way to include your components in Framer X is to add the script tag thorugh a custom React Hook. If you're new to React, a good place to start is [here](https://reactjs.org/docs/getting-started.html).
 
 1. Add this [Gist](https://gist.github.com/addisonschultz/1811e75b498311211a7f6b8634fb27cd) to the `code` folder of your Framer X Project.
-1. Add the custom hook + script URL to your component file. The script URL for these components is `"https://unpkg.com/framerxcomponents/dist/mycomponent.js"`.
+1. Add the custom hook + script URL to your component file. The script URL for these components is `"https://unpkg.com/framerxcomponents/dist/framerxcomponents.js"`.
 1. Use the custom elements in the render body of the Component.
 
 ### **Node_Modules**

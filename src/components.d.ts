@@ -27,20 +27,6 @@ export namespace Components {
     */
     'text'?: string;
   }
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
   interface MyInput {
     /**
     * Disable Input
@@ -94,12 +80,6 @@ declare global {
     new (): HTMLMyButtonElement;
   };
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
-
   interface HTMLMyInputElement extends Components.MyInput, HTMLStencilElement {}
   var HTMLMyInputElement: {
     prototype: HTMLMyInputElement;
@@ -119,7 +99,6 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'my-button': HTMLMyButtonElement;
-    'my-component': HTMLMyComponentElement;
     'my-input': HTMLMyInputElement;
     'my-toggle': HTMLMyToggleElement;
     'my-tooltip': HTMLMyTooltipElement;
@@ -144,20 +123,6 @@ declare namespace LocalJSX {
     * Optional string that can be used to set the button value
     */
     'text'?: string;
-  }
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
   }
   interface MyInput extends JSXBase.HTMLAttributes<HTMLMyInputElement> {
     /**
@@ -204,7 +169,6 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'my-button': MyButton;
-    'my-component': MyComponent;
     'my-input': MyInput;
     'my-toggle': MyToggle;
     'my-tooltip': MyTooltip;
