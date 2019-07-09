@@ -41,7 +41,48 @@ export namespace Components {
     */
     'middle': string;
   }
-  interface MyInput {}
+  interface MyInput {
+    /**
+    * Disable Input
+    */
+    'disabled'?: boolean;
+    /**
+    * Show error state
+    */
+    'error'?: boolean;
+    /**
+    * Placeholder text
+    */
+    'placeholder'?: string;
+    /**
+    * Input text
+    */
+    'value'?: string;
+  }
+  interface MyToggle {
+    /**
+    * Disable Toggle
+    */
+    'disabled'?: boolean;
+    /**
+    * Set on state
+    */
+    'on'?: boolean;
+  }
+  interface MyTooltip {
+    /**
+    * Arrow position
+    */
+    'arrow'?: "top" | "right" | "bottom" | "left";
+    /**
+    * Set error state
+    */
+    'error'?: boolean;
+    /**
+    * Set text
+    */
+    'text'?: string;
+  }
 }
 
 declare global {
@@ -64,10 +105,24 @@ declare global {
     prototype: HTMLMyInputElement;
     new (): HTMLMyInputElement;
   };
+
+  interface HTMLMyToggleElement extends Components.MyToggle, HTMLStencilElement {}
+  var HTMLMyToggleElement: {
+    prototype: HTMLMyToggleElement;
+    new (): HTMLMyToggleElement;
+  };
+
+  interface HTMLMyTooltipElement extends Components.MyTooltip, HTMLStencilElement {}
+  var HTMLMyTooltipElement: {
+    prototype: HTMLMyTooltipElement;
+    new (): HTMLMyTooltipElement;
+  };
   interface HTMLElementTagNameMap {
     'my-button': HTMLMyButtonElement;
     'my-component': HTMLMyComponentElement;
     'my-input': HTMLMyInputElement;
+    'my-toggle': HTMLMyToggleElement;
+    'my-tooltip': HTMLMyTooltipElement;
   }
 }
 
@@ -104,12 +159,55 @@ declare namespace LocalJSX {
     */
     'middle'?: string;
   }
-  interface MyInput extends JSXBase.HTMLAttributes<HTMLMyInputElement> {}
+  interface MyInput extends JSXBase.HTMLAttributes<HTMLMyInputElement> {
+    /**
+    * Disable Input
+    */
+    'disabled'?: boolean;
+    /**
+    * Show error state
+    */
+    'error'?: boolean;
+    /**
+    * Placeholder text
+    */
+    'placeholder'?: string;
+    /**
+    * Input text
+    */
+    'value'?: string;
+  }
+  interface MyToggle extends JSXBase.HTMLAttributes<HTMLMyToggleElement> {
+    /**
+    * Disable Toggle
+    */
+    'disabled'?: boolean;
+    /**
+    * Set on state
+    */
+    'on'?: boolean;
+  }
+  interface MyTooltip extends JSXBase.HTMLAttributes<HTMLMyTooltipElement> {
+    /**
+    * Arrow position
+    */
+    'arrow'?: "top" | "right" | "bottom" | "left";
+    /**
+    * Set error state
+    */
+    'error'?: boolean;
+    /**
+    * Set text
+    */
+    'text'?: string;
+  }
 
   interface IntrinsicElements {
     'my-button': MyButton;
     'my-component': MyComponent;
     'my-input': MyInput;
+    'my-toggle': MyToggle;
+    'my-tooltip': MyTooltip;
   }
 }
 

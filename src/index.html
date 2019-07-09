@@ -12,14 +12,82 @@
     <script nomodule src="/build/framerxcomponents.js"></script>
   </head>
   <body>
-    <my-component
-      first="Stencil"
-      last="'Don't call me a framework' JS"
-    ></my-component>
+    <h1>Stencil / Framer X Components</h1>
+    <hr/>
+    <div> 
+      <my-button text="Default" fluid></my-button>
+    </div>
     <hr />
-    <my-button text="Default"></my-button>
-    <my-button text="Primary" kind="primary"></my-button>
-    <my-button text="Danger" kind="danger"></my-button>
-    <my-button text="Disabled" disabled></my-button>
+    <div>
+      <my-button text="Primary" kind="primary" fluid></my-button>
+    </div>
+    <hr />
+    <div> 
+      <my-button text="Danger" kind="danger" fluid></my-button>
+    </div>
+    <hr />
+    <div> 
+      <my-button text="Disabled" disabled fluid></my-button>
+    </div>
+    <hr />
+    <div>
+      <my-input placeholder="Email" />
+    </div>
+    <hr />
+    <div> 
+      <my-input placeholder="Error" error />
+    </div>
+    <hr />
+    <div> 
+      <my-input placeholder="Disabled" disabled />
+    </div>
+    <hr />
+    <div> 
+      <span>default</span> 
+      <my-toggle />
+    </div>
+    <hr />
+    <div>
+      <span>on</span> 
+      <my-toggle on/>
+    </div>
+    <hr />
+    <div>
+      <span>disabled</span> 
+      <my-toggle disabled/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="left"/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="top"/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="right"/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="bottom"/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="left" error/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="top" error/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="right" error/>
+    </div>
+    <hr />
+    <div>
+      <my-tooltip text="component" arrow="bottom" error/>
+    </div>
+    <hr />
   </body>
 </html>

@@ -1,0 +1,45 @@
+input {
+  background-color: var(--paneBgDark, #fdfdfd);
+  border-radius: 4px;
+  border: none;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+    inset 0px 0px 0px 1px var(--paneBorder, rgba(0 0 0 0.1));
+  color: var(--body, #222);
+  font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  outline: 0;
+  overflow: visible;
+  padding: 16px;
+  transition: box-shadow 0.2s;
+  width: 100%;
+}
+
+input:focus {
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+    inset 0px 0px 0px 1px var(--primary, #75f),
+    0px 0px 0px 2px var(--primaryLight, #eef);
+}
+
+input:focus::placeholder {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.disabled {
+  color: var(--bodyLightest, #aaa);
+  pointer-events: none;
+}
+
+.error {
+  color: var(--danger, #f44);
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+    inset 0px 0px 0px 1px var(--danger, #f44);
+}
+
+.error:focus {
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.05),
+    inset 0px 0px 0px 1px var(--danger, #f44),
+    0px 0px 0px 2px var(--dangerLight, #fdd);
+}
