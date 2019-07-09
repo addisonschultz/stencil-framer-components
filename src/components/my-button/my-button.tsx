@@ -7,11 +7,34 @@ import { Component, Prop, h } from "@stencil/core";
 })
 export class MyButton {
   /**
-   * The text property for MyButton
+   * Optional string that can be used to set the button value
    */
-  @Prop() text: string;
+  @Prop() text?: string;
+
+  /**
+   * Make button grow to 100%
+   */
+  @Prop() fluid?: boolean;
+
+  /**
+   * Disable button
+   */
+  @Prop() disabled?: boolean;
+
+  /**
+   * Button kind
+   */
+  @Prop() kind?: "default" | "primary" | "danger";
 
   render() {
-    return <button>{this.text}</button>;
+    return (
+      <button
+        class={`${this.fluid ? "fluid" : ""} ${
+          this.disabled ? "disabled" : ""
+        } ${this.kind ? this.kind : ""}`}
+      >
+        {this.text}
+      </button>
+    );
   }
 }

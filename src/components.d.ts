@@ -11,9 +11,21 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface MyButton {
     /**
-    * The text property for MyButton
+    * Disable button
     */
-    'text': string;
+    'disabled'?: boolean;
+    /**
+    * Make button grow to 100%
+    */
+    'fluid'?: boolean;
+    /**
+    * Button kind
+    */
+    'kind'?: "default" | "primary" | "danger";
+    /**
+    * Optional string that can be used to set the button value
+    */
+    'text'?: string;
   }
   interface MyComponent {
     /**
@@ -29,6 +41,7 @@ export namespace Components {
     */
     'middle': string;
   }
+  interface MyInput {}
 }
 
 declare global {
@@ -45,16 +58,35 @@ declare global {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
   };
+
+  interface HTMLMyInputElement extends Components.MyInput, HTMLStencilElement {}
+  var HTMLMyInputElement: {
+    prototype: HTMLMyInputElement;
+    new (): HTMLMyInputElement;
+  };
   interface HTMLElementTagNameMap {
     'my-button': HTMLMyButtonElement;
     'my-component': HTMLMyComponentElement;
+    'my-input': HTMLMyInputElement;
   }
 }
 
 declare namespace LocalJSX {
   interface MyButton extends JSXBase.HTMLAttributes<HTMLMyButtonElement> {
     /**
-    * The text property for MyButton
+    * Disable button
+    */
+    'disabled'?: boolean;
+    /**
+    * Make button grow to 100%
+    */
+    'fluid'?: boolean;
+    /**
+    * Button kind
+    */
+    'kind'?: "default" | "primary" | "danger";
+    /**
+    * Optional string that can be used to set the button value
     */
     'text'?: string;
   }
@@ -72,10 +104,12 @@ declare namespace LocalJSX {
     */
     'middle'?: string;
   }
+  interface MyInput extends JSXBase.HTMLAttributes<HTMLMyInputElement> {}
 
   interface IntrinsicElements {
     'my-button': MyButton;
     'my-component': MyComponent;
+    'my-input': MyInput;
   }
 }
 

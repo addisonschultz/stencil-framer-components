@@ -1,0 +1,16 @@
+:root {
+  --paneBg: #fff;
+  --paneBgDark: #fdfdfd;
+  --paneBorder: rgba(0; 0; 0; 0.1);
+  --primary: #75f;
+  --primaryDark: #74f;
+  --primaryLight: #eef;
+  --danger: #f44;
+  --dangerDark: #f34;
+  --dangerLight: #fdd;
+  --body: #222;
+  --bodyLight: #444;
+  --bodyLighter: #666;
+  --bodyLightest: #aaa;
+  --font: Helvetica, Arial, sans-serif;
+}
