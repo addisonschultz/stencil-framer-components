@@ -7,9 +7,12 @@
 
 ## Properties
 
-| Property | Attribute | Description                    | Type     | Default     |
-| -------- | --------- | ------------------------------ | -------- | ----------- |
-| `text`   | `text`    | The text property for MyButton | `string` | `undefined` |
+| Property   | Attribute  | Description                                              | Type                                 | Default     |
+| ---------- | ---------- | -------------------------------------------------------- | ------------------------------------ | ----------- |
+| `disabled` | `disabled` | Disable button                                           | `boolean`                            | `undefined` |
+| `fluid`    | `fluid`    | Make button grow to 100%                                 | `boolean`                            | `undefined` |
+| `kind`     | `kind`     | Button kind                                              | `"danger" \| "default" \| "primary"` | `undefined` |
+| `text`     | `text`     | Optional string that can be used to set the button value | `string`                             | `undefined` |
 
 
 ----------------------------------------------

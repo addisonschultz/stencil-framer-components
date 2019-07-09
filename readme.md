@@ -2,8 +2,38 @@
 
 # Framer X / StencilJS Components
 
-This is a repository of components to test the possibilites for integration between Framer X and StencilJS Web Components.
+This repository is an example of a few components based on the [framer-bridge-starter-kit](https://github.com/framer/framer-bridge-starter-kit) component library, but built entirely in StencilJS Web Components.
 
-In order to use Stencil Web Components in a Framer X Project, you'll need to build your components, and have them published on NPM.
+These components can be used within any Web Framework, but were designed to illustrate the workflow between maintaining a Web Component based Design System in [Framer X](https://www.framer.com/).
 
-You can then use this [Gist](https://gist.github.com/addisonschultz/1811e75b498311211a7f6b8634fb27cd) to load your script tag into Framer X.
+## Using Components
+
+This package contains 4 main components:
+
+- `<my-button />`
+- `<my-input />`
+- `<my-toggle />`
+- `<my-tooltip />`
+
+Follow the steps below to use them in your project.
+
+### **Script Tag in HTML**
+
+1. Put this tag `<script src='https://unpkg.com/framerxcomponents/dist/mycomponent.js'></script>` in the head of your index.html. You can use a different version by specifiying the verion following [this doc](https://unpkg.com/).
+1. Use the custom elements listed above anywhere in your template, JSX, HTML, etc.
+
+### **Framer X**
+
+Check out this [starter kit](https://github.com/addisonschultz/yarn-monorepo) to learn more about how these components are maintained in Framer X, and see a working example of these living in a Framer X project.
+
+Framer X uses React under the hood, but that doesn't mean you can't use you custom Web Components. The easiest way to include your components in Framer X is to add the script tag thorugh a custom React Hook. If you're new to React, a good place to start is [here](https://reactjs.org/docs/getting-started.html).
+
+1. Add this [Gist](https://gist.github.com/addisonschultz/1811e75b498311211a7f6b8634fb27cd) to the `code` folder of your Framer X Project.
+1. Add the custom hook + script URL to your component file. The script URL for these components is `"https://unpkg.com/framerxcomponents/dist/mycomponent.js"`.
+1. Use the custom elements in the render body of the Component.
+
+### **Node_Modules**
+
+1. Run `npm install framerxcomponents --save`
+1. Import the StencilJS component into the file you wish to use it in by adding `import my-button from "framerxcomponents"` at the top.
+1. Use the custom elements listed above anywhere in your template, JSX, HTML, etc.
