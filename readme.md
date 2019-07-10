@@ -14,6 +14,8 @@ This package contains 4 main components:
 
 ### `<my-button />`
 
+A flexible button with multiple props to change the appearance.
+
 | Property | Type      | Description           | Default        |
 | -------- | --------- | --------------------- | -------------- |
 | text     | `string`  | Button text           | `Download App` |
@@ -21,7 +23,11 @@ This package contains 4 main components:
 | disabled | `boolean` | Button disabled state | `false`        |
 | kind     | `enum`    | Button Kind           | `default`      |
 
+---
+
 ### `<my-input />`
+
+An input field with props to change the appearance.
 
 | Property    | Type      | Description          | Default |
 | ----------- | --------- | -------------------- | ------- |
@@ -30,14 +36,22 @@ This package contains 4 main components:
 | disabled    | `boolean` | Input disabled state | `false` |
 | error       | `boolean` | Input error state    | `false` |
 
+---
+
 ### `<my-toggle />`
+
+A usable toggle with props to change it's state.
 
 | Property | Type      | Description           | Default |
 | -------- | --------- | --------------------- | ------- |
 | disabled | `boolean` | Toggle disabled state | `false` |
 | on       | `boolean` | Toggle on state       | `false` |
 
+---
+
 ### `<my-tooltip />`
+
+A tooltip with props to change the appearance.
 
 | Property | Type      | Description         | Default     |
 | -------- | --------- | ------------------- | ----------- |
@@ -53,7 +67,7 @@ Follow the steps below to use them in your project.
 
 ### **Script Tag in HTML**
 
-1. Put this tag `<script src='https://unpkg.com/framerxcomponents/dist/framerxcomponents.js'></script>` in the head of your index.html. You can use a different version by specifiying the verion following [this doc](https://unpkg.com/).
+1. Put this tag `<script src='https://unpkg.com/stencil-framer-components/dist/framerxcomponents.js'></script>` in the head of your index.html. You can use a different version by specifiying the verion following [this doc](https://unpkg.com/).
 1. Use the custom elements listed above anywhere in your template, JSX, HTML, etc.
 
 ### **Framer X**
@@ -63,11 +77,11 @@ Check out this [starter kit](https://github.com/addisonschultz/yarn-monorepo) to
 Framer X uses React under the hood, but that doesn't mean you can't use you custom Web Components. The easiest way to include your components in Framer X is to add the script tag thorugh a custom React Hook. If you're new to React, a good place to start is [here](https://reactjs.org/docs/getting-started.html).
 
 1. Add this [Gist](https://gist.github.com/addisonschultz/1811e75b498311211a7f6b8634fb27cd) to the `code` folder of your Framer X Project.
-1. Add the custom hook + script URL to your component file. The script URL for these components is `"https://unpkg.com/framerxcomponents/dist/framerxcomponents.js"`.
+1. Add the custom hook + script URL to your component file. The script URL for these components is `"https://unpkg.com/stencil-framer-components/dist/framerxcomponents.js"`.
 1. Use the custom elements in the render body of the Component.
 
 ### **Node_Modules**
 
-1. Run `npm install framerxcomponents --save`
-1. Import the StencilJS component into the file you wish to use it in by adding `import my-button from "framerxcomponents"` at the top.
+1. Run `npm install stencil-framer-components --save`
+1. Import the StencilJS component into the file you wish to use it in by adding `import my-button from "stencil-framer-components"` at the top.
 1. Use the custom elements listed above anywhere in your template, JSX, HTML, etc.

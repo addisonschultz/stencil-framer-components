@@ -1,7 +1,7 @@
 {
-  "name": "framerxcomponents",
-  "version": "2.1.7",
-  "description": "Stencil Component Starter",
+  "name": "stencil-framer-components",
+  "version": "1.0.1",
+  "description": "Stencil Components built for Framer X",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/framerxcomponents/framerxcomponents.js",
+  "unpkg": "dist/stencil-framer-components/framerxcomponents.js",
   "files": [
     "dist/",
     "loader/"
