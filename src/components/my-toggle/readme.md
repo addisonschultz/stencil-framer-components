@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description    | Type      | Default     |
-| ---------- | ---------- | -------------- | --------- | ----------- |
-| `disabled` | `disabled` | Disable Toggle | `boolean` | `undefined` |
-| `on`       | `on`       | Set on state   | `boolean` | `undefined` |
+| Property   | Attribute  | Description    | Type      | Default |
+| ---------- | ---------- | -------------- | --------- | ------- |
+| `disabled` | `disabled` | Disable Toggle | `boolean` | `false` |
+| `on`       | `on`       | Set on state   | `boolean` | `false` |
 
 
 ----------------------------------------------

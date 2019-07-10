@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type                                     | Default     |
-| -------- | --------- | --------------- | ---------------------------------------- | ----------- |
-| `arrow`  | `arrow`   | Arrow position  | `"bottom" \| "left" \| "right" \| "top"` | `undefined` |
-| `error`  | `error`   | Set error state | `boolean`                                | `undefined` |
-| `text`   | `text`    | Set text        | `string`                                 | `undefined` |
+| Property | Attribute | Description     | Type                                     | Default       |
+| -------- | --------- | --------------- | ---------------------------------------- | ------------- |
+| `arrow`  | `arrow`   | Arrow position  | `"bottom" \| "left" \| "right" \| "top"` | `"left"`      |
+| `error`  | `error`   | Set error state | `boolean`                                | `false`       |
+| `text`   | `text`    | Set text        | `string`                                 | `"Component"` |
 
 
 ----------------------------------------------

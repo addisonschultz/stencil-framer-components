@@ -9,9 +9,9 @@
 
 | Property      | Attribute     | Description      | Type      | Default     |
 | ------------- | ------------- | ---------------- | --------- | ----------- |
-| `disabled`    | `disabled`    | Disable Input    | `boolean` | `undefined` |
-| `error`       | `error`       | Show error state | `boolean` | `undefined` |
-| `placeholder` | `placeholder` | Placeholder text | `string`  | `undefined` |
+| `disabled`    | `disabled`    | Disable Input    | `boolean` | `false`     |
+| `error`       | `error`       | Show error state | `boolean` | `false`     |
+| `placeholder` | `placeholder` | Placeholder text | `string`  | `"Email"`   |
 | `value`       | `value`       | Input text       | `string`  | `undefined` |
 
 
