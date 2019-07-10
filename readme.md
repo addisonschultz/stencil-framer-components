@@ -12,8 +12,6 @@ These components can be used within any Web Framework, but were designed to illu
 
 This package contains 4 main components:
 
-**Button**
-
 ### `<my-button />`
 
 | Property | Type      | Description           | Default        |
@@ -22,8 +20,6 @@ This package contains 4 main components:
 | fluid    | `boolean` | Width of button       | `true`         |
 | disabled | `boolean` | Button disabled state | `false`        |
 | kind     | `enum`    | Button Kind           | `default`      |
-
-**Input**
 
 ### `<my-input />`
 
@@ -34,16 +30,12 @@ This package contains 4 main components:
 | disabled    | `boolean` | Input disabled state | `false` |
 | error       | `boolean` | Input error state    | `false` |
 
-**Toggle**
-
 ### `<my-toggle />`
 
 | Property | Type      | Description           | Default |
 | -------- | --------- | --------------------- | ------- |
 | disabled | `boolean` | Toggle disabled state | `false` |
 | on       | `boolean` | Toggle on state       | `false` |
-
-**Tooltip**
 
 ### `<my-tooltip />`
 
