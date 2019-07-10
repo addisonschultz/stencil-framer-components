@@ -7,13 +7,13 @@ import { Component, Prop, h } from "@stencil/core";
 })
 export class MyTooltip {
   /** Arrow position */
-  @Prop() arrow?: "top" | "right" | "bottom" | "left";
+  @Prop() arrow?: "top" | "right" | "bottom" | "left" = "left";
 
   /** Set error state  */
-  @Prop() error?: boolean;
+  @Prop() error?: boolean = false;
 
   /** Set text */
-  @Prop() text?: string;
+  @Prop() text?: string = "Component";
 
   render() {
     return (

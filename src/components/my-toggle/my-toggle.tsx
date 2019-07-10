@@ -7,10 +7,10 @@ import { Component, Prop, State, h } from "@stencil/core";
 })
 export class MyToggle {
   /** Disable Toggle */
-  @Prop() disabled?: boolean;
+  @Prop() disabled?: boolean = false;
 
   /** Set on state  */
-  @Prop() on?: boolean;
+  @Prop() on?: boolean = false;
 
   @State() toggle: boolean = false;
 

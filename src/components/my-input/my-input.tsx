@@ -10,13 +10,13 @@ export class MyInput {
   @Prop() value?: string;
 
   /** Placeholder text */
-  @Prop() placeholder?: string;
+  @Prop() placeholder?: string = "Email";
 
   /** Disable Input */
-  @Prop() disabled?: boolean;
+  @Prop() disabled?: boolean = false;
 
   /** Show error state */
-  @Prop() error?: boolean;
+  @Prop() error?: boolean = false;
 
   render() {
     return (
