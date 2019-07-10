@@ -6,14 +6,56 @@ This repository is an example of a few components based on the [framer-bridge-st
 
 These components can be used within any Web Framework, but were designed to illustrate the workflow between maintaining a Web Component based Design System in [Framer X](https://www.framer.com/).
 
-## Using Components
+---
+
+## Components
 
 This package contains 4 main components:
 
-- `<my-button />`
-- `<my-input />`
-- `<my-toggle />`
-- `<my-tooltip />`
+**Button**
+
+### `<my-button />`
+
+| Property | Type      | Description           | Default        |
+| -------- | --------- | --------------------- | -------------- |
+| text     | `string`  | Button text           | `Download App` |
+| fluid    | `boolean` | Width of button       | `true`         |
+| disabled | `boolean` | Button disabled state | `false`        |
+| kind     | `enum`    | Button Kind           | `default`      |
+
+**Input**
+
+### `<my-input />`
+
+| Property    | Type      | Description          | Default |
+| ----------- | --------- | -------------------- | ------- |
+| value       | `string`  | Input value          |         |
+| placeholder | `string`  | Input placeholder    | `Email` |
+| disabled    | `boolean` | Input disabled state | `false` |
+| error       | `boolean` | Input error state    | `false` |
+
+**Toggle**
+
+### `<my-toggle />`
+
+| Property | Type      | Description           | Default |
+| -------- | --------- | --------------------- | ------- |
+| disabled | `boolean` | Toggle disabled state | `false` |
+| on       | `boolean` | Toggle on state       | `false` |
+
+**Tooltip**
+
+### `<my-tooltip />`
+
+| Property | Type      | Description         | Default     |
+| -------- | --------- | ------------------- | ----------- |
+| arrow    | `enum`    | Arrow direction     | `left`      |
+| text     | `string`  | Tooltip text        | `Component` |
+| error    | `boolean` | Tooltip error state | `false`     |
+
+---
+
+## Using Components
 
 Follow the steps below to use them in your project.
 
