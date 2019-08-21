@@ -1,6 +1,6 @@
 {
   "name": "stencil-framer-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stencil Components built for Framer X",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
